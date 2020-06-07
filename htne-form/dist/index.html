@@ -18,19 +18,19 @@
   </header><br>
 
   <div id="form-div">
-    <form id="form">
-      <input class="textbox" type="text" id="model-name" placeholder="Name of Model" required></input><br>
-      <textarea type="text" class="textbox" id="description" placeholder="Description" required></textarea>
+    <form id="form" action="http://127.0.0.1:8080/upload" method="POST" enctype="multipart/form-data">
+      <input class="textbox" type="text" id="model-name" placeholder="Name of Model" name="model-name" required></input><br>
+      <textarea type="text" class="textbox" id="description" placeholder="Description" name="description" required></textarea>
 
       <br><label id="file-text">select a file</label><br>
-      <input type="file" id="file-button"></input><br>
+      <input type="file" id="file-button" name="file"></input><br>
 
       <br><label id="question-label">Questions</label><br>
       <label id="optional">(optional)</label><br>
-      <input class="textbox" type="text" id="question" placeholder="Question"></input><br>
-      <input class="textbox" type="text" id="option1" placeholder="Option 1"></input><br>
-      <input type="text" class="textbox" id="option2" placeholder="Option 2"></input><br>
-      <input type="text" class="textbox" id="option3" placeholder="Option 3"></input><br>
+      <input class="textbox" type="text" id="question" placeholder="Question" name="question"></input><br>
+      <input class="textbox" type="text" id="option1" placeholder="Option 1" name="response1"></input><br>
+      <input type="text" class="textbox" id="option2" placeholder="Option 2" name="response2"></input><br>
+      <input type="text" class="textbox" id="option3" placeholder="Option 3" name="response3"></input><br>
       <button type="submit" class="textbox" id="submit-button">submit</button>
     </form>
   </div>
