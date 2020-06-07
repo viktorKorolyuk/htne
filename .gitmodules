@@ -1,0 +1,3 @@
+[submodule "htne-backend/htne_backend"]
+	path = htne-backend/htne_backend
+	url = https://github.com/viktorKorolyuk/htne_backend
