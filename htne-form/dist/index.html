@@ -3,41 +3,39 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - HTNE Form</title>
+  <title>leARn Submission Form</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <!-- partial:index.partial.html -->
-  <html>
-  <header id="header">
-    <div id="background-image">
-      <h3 id="title">model upload</h3>
-    </div>
-  </header><br>
 
   <div id="form-div">
+    <div id="header">
+      <h2>leARn</h2>
+      <h1 id="title">model upload</h1>
+    </div>
     <form id="form" action="http://127.0.0.1:8080/upload" method="POST" enctype="multipart/form-data">
-      <input class="textbox" type="text" id="model-name" placeholder="Name of Model" name="model-name" required></input><br>
-      <textarea type="text" class="textbox" id="description" placeholder="Description" name="description" required></textarea>
+      <input class="textbox input" type="text" id="model-name" placeholder="Name of Model" name="module_name"
+        required></input><br>
+      <textarea class="textbox input" type="text" id="description" placeholder="Description" name="description"
+        required></textarea>
 
       <br><label id="file-text">select a file</label><br>
-      <input type="file" id="file-button" name="file"></input><br>
+      <input type="file" class="input" id="file-button" name="file"></input><br>
 
       <br><label id="question-label">Questions</label><br>
       <label id="optional">(optional)</label><br>
-      <input class="textbox" type="text" id="question" placeholder="Question" name="question"></input><br>
-      <input class="textbox" type="text" id="option1" placeholder="Option 1" name="response1"></input><br>
-      <input type="text" class="textbox" id="option2" placeholder="Option 2" name="response2"></input><br>
-      <input type="text" class="textbox" id="option3" placeholder="Option 3" name="response3"></input><br>
+      <input class="textbox input" type="text" id="question" placeholder="Question" name="question"></input>
+      <input class="textbox input" type="text" id="option1" placeholder="Option 1" name="response1"></input>
+      <input class="textbox input" type="text" id="option2" placeholder="Option 2" name="response2"></input>
+      <input class="textbox input" type="text" id="option3" placeholder="Option 3" name="response3"></input>
       <button type="submit" class="textbox" id="submit-button">submit</button>
     </form>
   </div>
-
-  </html>
-  <!-- partial -->
-
 </body>
 
 </html>
