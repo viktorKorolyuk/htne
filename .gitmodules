@@ -1,3 +1,6 @@
 [submodule "htne-backend/htne_backend"]
 	path = htne-backend/htne_backend
 	url = https://github.com/viktorKorolyuk/htne_backend
+[submodule "htne-mobile/Flutter-AR-Learning"]
+	path = htne-mobile/Flutter-AR-Learning
+	url = https://github.com/chessmyers/Flutter-AR-Learning
